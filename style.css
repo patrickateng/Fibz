@@ -8,7 +8,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/*--  header  --*/
+/* header */
 
 .navbar {
   display: flex;
@@ -93,7 +93,7 @@ p {
   margin-top: 70px;
 }
 
-/*--  featured categories  --*/
+/* featured categories */
 
 .categories {
   margin: 70px 0;
@@ -109,7 +109,7 @@ p {
   width: 100%;
 }
 
-/*--  featured products  --*/
+/* featured products */
 
 .small-container {
   max-width: 1080px;
@@ -163,13 +163,13 @@ h4 {
   color: #ff523b;
 }
 
-/*--  rating  --*/
+/* rating */
 
 .col-4:hover {
   transform: translateY(-5px);
 }
 
-/*--  offer  --*/
+/* offer */
 
 .offer {
   background: radial-gradient(#fff, #ffd6d6);
@@ -185,7 +185,7 @@ small {
   color: #555;
 }
 
-/*--  testimonial  --*/
+/* testimonial */
 
 .testimonial {
   padding-top: 100px;
@@ -226,7 +226,7 @@ small {
   font-size: 16px;
 }
 
-/*--  brands  --*/
+/* brands */
 
 .brands {
   margin: 100px auto;
@@ -246,7 +246,7 @@ small {
   filter: grayscale(0);
 }
 
-/*-- footer --*/
+/* footer */
 
 .footer {
   background: #000;
@@ -283,6 +283,83 @@ small {
   margin-bottom: 20px;
 }
 
+.footer-col-3, .footer-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+
+ul { 
+  list-style-type: none;
+}
+
+.app-logo {
+  margin-top: 20px;
+}
+
+.app-logo img {
+  width: 140px;
+}
+
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+
+/* media querry for menu */
+
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* media querry for less tahn 600 screen size */
+
+@media only screen and (max-width: 600px) {
+
+  .row {
+    text-align: center;
+  }
+
+  .col-2, .col-3, .col-4 {
+    flex-basis: 100%;
+  }
+
+}
 
 
 
