@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Products - Chicfit</title>
+    <title>Product Details - Chicfit</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?
 family=Poppins:wght@300;400;500;600;700&display=swap">
@@ -42,19 +42,19 @@ family=Poppins:wght@300;400;500;600;700&display=swap">
     <div class="small-container single-product">
       <div class="row">
         <div class="col-2">
-          <img src="images/gallery-1.jpg" width="100%">
+          <img src="images/gallery-1.jpg" width="100%" id="ProductImg">
           <div class="small-img-row">
             <div class="small-img-col">
-              <img src="images/gallery-1.jpg" width="100%">
+              <img src="images/gallery-1.jpg" width="100%" class="small-img">
             </div>
             <div class="small-img-col">
-              <img src="images/gallery-1.jpg" width="100%">
+              <img src="images/gallery-2.jpg" width="100%" class="small-img">
             </div>
             <div class="small-img-col">
-              <img src="images/gallery-1.jpg" width="100%">
+              <img src="images/gallery-3.jpg" width="100%" class="small-img">
             </div>
             <div class="small-img-col">
-              <img src="images/gallery-1.jpg" width="100%">
+              <img src="images/gallery-4.jpg" width="100%" class="small-img">
             </div>
           </div>
         </div>
@@ -82,6 +82,17 @@ family=Poppins:wght@300;400;500;600;700&display=swap">
         </div>
       </div>
     </div>
+
+    <!--title-->
+
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+      </div>
+    </div>
+
+    <!--products-->
 
     <div class="small-container">
       <div class="row">
@@ -196,6 +207,28 @@ family=Poppins:wght@300;400;500;600;700&display=swap">
           MenuItems.style.maxHeight = "0px"
         }
       }
+
+    </script>
+
+    <!-- js for product gallery-->
+
+    <script>
+
+      var ProductImg = document.getElementById("ProductImg")
+        var SmallImg = document.getElementsByClassName("small-img")
+
+          SmallImg[0].onclick = function() {
+            ProductImg.src = SmallImg[0].src;
+          }
+          SmallImg[1].onclick = function() {
+            ProductImg.src = SmallImg[1].src;
+          }
+          SmallImg[2].onclick = function() {
+            ProductImg.src = SmallImg[2].src;
+          }
+          SmallImg[3].onclick = function() {
+            ProductImg.src = SmallImg[3].src;
+          }
 
     </script>
 
